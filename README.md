@@ -1,8 +1,51 @@
-# Cardiovascular-Disease-Prediction
-Heart disease is a powerful antagonist of human health that aﬀects people of all ages and from all demographic backgrounds. Heart aWacks and strokes are among the serious consequences that can result from this intricate range of disorders that
-impact the heart and blood vessels. PredicPng heart disease turns out to be a valuable tool in the never- ending quest for health since it provides protecPon against its possibly fatal eﬀects. By managing underlying risk factors like diabetes,
-high cholesterol, and hypertension early on, early idenPficaPon helps to halt the advancement of cardiovascular disease. Moreover, the secret to individualized therapy lies in the predicPon of heart disease. Healthcare providers are able to
-customize intervenPons to meet the specific requirements of every paPent by usingsophisPcated screening methods and risk assessment instruments. With a focus on specific areas, this methodical strategy guarantees appropriate resource allocaPon, opPmizing intervenPon eﬃcacy while reducing potenPal risks.
-This dataset presents a holisPc view of factors influencing cardiovascular outcomes,oﬀering invaluable insights for research, clinical pracPce and public healthiniPaPves. At its core, the dataset includes clinical indicators such as Body Mass
-Index (BMI), smoking habits, alcohol consumpPon, history of stroke, and presence of diabetes . Demographic characterisPcs such as age, sex, and race are incorporated into the dataset, acknowledging the intricate interplay between genePc predisposiPon and environmental influences on heart disease risk .Moreover, lifestyle factors and health behaviors are mePculously documented,including paWerns of physical acPvity, sleep duraPon, and history of condiPons such
-as asthma, kidney disease, and skin cancer. the dataset serves as a rich repository of informaPon, poised to unravel the complexiPes of heart disease ePology,progression, and prognosis.
+#Cardiovascular Disease Prediction using Feature Selection and Machine Learning
+
+Predicting cardiovascular diseases (CVD) can save lives by enabling early interventions and personalized healthcare plans. This project leverages feature selection techniques (LASSO, LLBFS) and machine learning models (Random Forest, Logistic Regression, K-Nearest Neighbors, Decision Tree) to predict heart disease with high accuracy.
+
+We experimented with various feature selection methods to improve model efficiency and identify the most significant predictors.
+
+Project Structure :
+
+📁 Cardiovascular-Disease-Prediction
+│
+├── data/                  # Dataset files
+│   └── heart_disease_dataset.csv
+│
+├── notebooks/             # Jupyter notebooks for EDA and modeling
+│   ├── 1_EDA.ipynb
+│   ├── 2_Feature_Selection.ipynb
+│   └── 3_Model_Training.ipynb
+│
+├── src/                   # Python scripts for modular implementation
+│   ├── preprocess.py
+│   ├── feature_selection.py
+│   ├── train_models.py
+│   └── evaluate_models.py
+│
+├── results/               # Visualizations and evaluation results
+│   ├── lasso_accuracy.png
+│   ├── llbfs_accuracy.png
+│   └── confusion_matrices/
+│
+├── main.py                # Main execution script
+├── requirements.txt       # Project dependencies
+└── README.md              # Project documentation
+
+Features
+
+✅ Predicts cardiovascular disease based on patient data
+✅ Implements advanced feature selection techniques for improved model performance
+✅ Compares multiple ML models for best accuracy
+✅ Visualizes results with clean graphs and charts
+✅ Modular code for easy customization and experimentation
+
+⸻
+
+📊 Results
+
+We compared model accuracies after applying LASSO and LLBFS feature selection techniques:
+
+Best Model:
+✔ Logistic Regression + LASSO Feature Selection
+✔ Achieved 91.24% accuracy
+✔ Reduced dimensionality and improved interpretability
